@@ -34,7 +34,7 @@ p {
     width: 100%;
     min-height: 100vh;
     background-color: #ffffff;
-    background-image: url('images/background-high.jpg');
+    background-image: url('images/background-medium.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -165,7 +165,7 @@ p {
         flex-direction: column;
         max-width: 100vh;
         background-attachment: fixed;
-        background-image: url('images/background-medium.jpg');
+        background-image: url('images/background-low.jpg');
     }
 
     .splash {
@@ -214,7 +214,7 @@ p {
 
 @media only screen and (max-width: 320px){
     .container {
-        background-image: url('images/background-medium.jpg');
+        background-image: url('images/background-low.jpg');
     }
     .heading {
         font-size: 35px;
