@@ -33,17 +33,19 @@ p {
 .container {
     width: 100%;
     min-height: 100vh;
+    max-height: 100vh;
     background-color: #ffffff;
     background-image: url('images/background-medium.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: space-between;
 }
 
 .splash {
     width: 50%;
-    max-height: 100%;
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -59,29 +61,30 @@ p {
 .line {
     width: 20%;
     border: 1px solid #ffffff;
-    margin-left: 0;
+    margin-left: 5rem;
 }
 
 .heading {
     font-weight: bold;
-    font-size: 50px;
+    font-size: 80px;
     color: #ffffff;
     padding: 5rem;
 }
 
 .footer {
-    width: 40%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 5rem;
+    justify-content: start;
+    /* padding: 5rem; */
 }
 
 .footer-text {
-    margin-top: 10;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .faq {
@@ -157,7 +160,7 @@ p {
 }
 
 /* Anything smaller than an ipad mini, we'll adjust to suit the screen */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 900px){
     .html, .body {
         max-width: 100vh;
     }
@@ -170,7 +173,7 @@ p {
 
     .splash {
         width: 100%;
-        height: 45vh;
+        min-height: 45vh;
         flex-direction: column;
         justify-content: space-between;
     }
@@ -202,13 +205,21 @@ p {
 
     .footer {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 70%;
-        padding-right: 0;
+        /* padding-left: 3rem; */
+        /* padding-bottom: 1rem; */
+        /* padding-top: 1rem; */
+    }
+
+    .line {
+        margin-left: 3rem;
+    }
+
+    .footer-text {
+        font-size: 30px;
+        /* padding-right: 0; */
         padding-left: 3rem;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
+        /* padding-bottom: 1rem; */
+        /* padding-top: 1rem; */
     }
 }
 
@@ -218,5 +229,13 @@ p {
     }
     .heading {
         font-size: 35px;
+    }
+
+    .footer-text {
+        font-size: 20px;
+    }
+
+    .line {
+        margin-left: 3rem;
     }
 }
