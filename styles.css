@@ -76,7 +76,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    /* padding: 5rem; */
 }
 
 .footer-text {
@@ -205,9 +204,6 @@ p {
 
     .footer {
         display: flex;
-        /* padding-left: 3rem; */
-        /* padding-bottom: 1rem; */
-        /* padding-top: 1rem; */
     }
 
     .line {
@@ -216,10 +212,7 @@ p {
 
     .footer-text {
         font-size: 30px;
-        /* padding-right: 0; */
         padding-left: 3rem;
-        /* padding-bottom: 1rem; */
-        /* padding-top: 1rem; */
     }
 }
 
